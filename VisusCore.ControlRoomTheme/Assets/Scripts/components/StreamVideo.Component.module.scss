@@ -1,0 +1,45 @@
+.stream-video-component {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+
+        .video-player-container {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+            .video-player {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .preview-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+        }
+    }
+}

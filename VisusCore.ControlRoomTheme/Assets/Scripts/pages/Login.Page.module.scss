@@ -1,0 +1,27 @@
+.login-page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  .background-overlay {
+    position: fixed;
+    background-image: url(../../Images/traffic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0.3) blur(8px);
+    -webkit-filter: opacity(0.3) blur(8px);
+    z-index: -1;
+  }
+
+  .logo {
+    background-image: url(../../Images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 10vh;
+    width: 100%;
+  }
+}

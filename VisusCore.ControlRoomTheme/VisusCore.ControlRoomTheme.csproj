@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <TargetFramework>net6.0</TargetFramework>
+    <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <NodeJsExtensionsNpmPackageFiles Remove="Assets\Scripts\App.Routes.tsx" />
+    <NodeJsExtensionsNpmPackageFiles Remove="Assets\Scripts\App.Services.tsx" />
+    <NodeJsExtensionsNpmPackageFiles Remove="Assets\Scripts\App.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lombiq.NodeJs.Extensions" Version="1.2.4" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.6.0" />
+  </ItemGroup>
+
+</Project>

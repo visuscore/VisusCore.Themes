@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "outDir": "./wwwroot/js",
+    "module": "ES6",
+    "target": "ES6",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "removeComments": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "reflect-metadata"
+    ],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "asIs"
+        }
+      }
+    ]
+  },
+  "include": [
+    "./Assets/Scripts/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
