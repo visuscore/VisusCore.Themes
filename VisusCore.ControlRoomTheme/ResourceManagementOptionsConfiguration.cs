@@ -22,5 +22,5 @@ public class ResourceManagementOptionsConfiguration : IConfigureOptions<Resource
             .SetUrl(Root + "/css/App.min.css", Root + "/css/App.css");
     }
 
-    public void Configure(ResourceManagementOptions options) => options.ResourceManifests.Add(_manifest);
+    public void Configure(ResourceManagementOptions options) => options?.ResourceManifests.Add(_manifest);
 }
